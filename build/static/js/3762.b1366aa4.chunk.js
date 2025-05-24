@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkResumeEra=self.webpackChunkResumeEra||[]).push([[3762],{83762:(e,r,d)=>{d.r(r),d.d(r,{default:()=>s});var u=d(83003),c=d(70579);const s=()=>{(0,u.d4)((e=>e.reducer.personalInfo)),(0,u.d4)((e=>[e.reducer.education])),(0,u.d4)((e=>[e.reducer.keySkills])),(0,u.d4)((e=>[e.reducer.workExperience])),(0,u.d4)((e=>[e.reducer.honorAndaward])),(0,u.d4)((e=>[e.reducer.addReference])),(0,u.d4)((e=>[e.reducer.addSoftSkills]));return(0,c.jsx)("div",{className:"resume"})}}}]);
+//# sourceMappingURL=3762.b1366aa4.chunk.js.map

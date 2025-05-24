@@ -1,0 +1,151 @@
+/* Default styling for larger screens */
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: goldenrod;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%; /* Use width 100% for better responsiveness */
+    z-index: 1000;
+}
+
+.logo-name {
+    font-display: swap;
+}
+
+.navbar-brand {
+    margin-bottom: 15px;
+}
+
+.navbar-link-brand {
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    -webkit-background-clip: text;
+    color: black;
+    animation: shine 1.5s infinite alternate;
+}
+
+.star:nth-child(even) {
+    transform: rotate(-15deg);
+    margin-bottom: 20px;
+}
+
+/* Navbar Links */
+.navbar-links {
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    color: #e0e0e0;
+    background-color: green;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 5px;
+}
+
+.navbar-link{
+    
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    /* margin: 5px; */
+    font-size: large;
+}
+
+.navbar-link:hover {
+    text-decoration: dashed;
+    color: white;
+}
+
+.navbar-links:hover {
+    background: linear-gradient(145deg, #1a1c35, #303554, #1c2b3a, #091a2d);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .navbar-link {
+        font-size: 0.8rem;
+        width: 100%;
+        margin-right: 5px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-content {
+        padding: 5px 10px;
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        margin-left: 0.5rem;
+    }
+
+    .navbar-link-brand {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .navbar-links {
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .navbar-link {
+        font-size: 0.8rem;
+        width: 100%;
+        margin-right: 5px;
+        text-align: center;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 320px), (min-width: 321px) {
+    .navbar-content {
+        padding: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        width: 100%;
+        text-align: center;
+        font-size: large;
+    }
+
+    .navbar-link-brand {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .navbar-links {
+        margin-left: auto;
+        padding: 5px 10px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .navbar-link {
+        font-size: 0.5rem;
+        width: 100%;
+        margin-right: 5px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,183 @@
+.main108{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 15px;
+}
+.Alisha{
+    width: 100%;
+    padding: 20px;
+}
+.Alisha p{
+    font-size: small;
+}
+.Alisha h4{
+    font-size: medium;
+    font-weight: 900;
+}
+.name108{
+text-align: center;
+}
+.name108 p, .name108 h3{
+text-align: start;
+}
+.name108 h1{
+    margin-bottom: -10px;
+}
+.contact108{
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+}
+.contact108 p{
+    font-size: xx-small;
+    
+}
+.hrtop{
+margin-bottom: -1px;
+width: 100%;
+}
+.hrbottom{
+    margin-top: -10px;
+    width: 100%;
+}
+.experience-section108 p{
+    font-size: 1rem;
+    margin-bottom: -5px;
+    width: 50%;
+}
+.technical-skill-item108{
+    display: flex;
+    justify-content: space-between;
+}
+.technical-skill-item108 P{
+    margin-bottom: -5px;
+}
+.certificate-item108 p{
+    margin-bottom: -5px;
+    font-weight: 500;
+    /* font-size: xx-small; */
+}
+.language-108 p{
+    margin-bottom: -5px;
+/* display: flex;
+justify-content: space-around; */
+}
+.language-item108 p{
+   margin-bottom: -5px;
+}
+
+@media (max-width:768px){
+    .main108{
+        display: flex;
+        justify-content: space-between;
+        /* flex-direction: column; */
+        margin: 0px;
+        padding: 2px;
+        /* height: 663px; */
+    }
+    .main108 h4{
+        font-size: medium;
+    }
+    .Alisha{
+        width: 100%;
+        padding: 2px;
+        margin-right: 5px;
+        height: fit-content;
+    }
+    .Alisha h4{
+        font-size: small;
+        font-weight: 900;
+    }
+    
+    .main108 .resume-download-section{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:425px){
+    .main108{
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        margin: 0px;
+        padding: 2px;
+    }
+    .main108 h4{
+        font-size: medium;
+    }
+    .Alisha{
+        width: 100%;
+        padding: 2px;
+    }
+    .Alisha p{
+        font-size: small;
+    }
+    .Alisha h4{
+        font-size: small;
+        font-weight: 900;
+    }
+    .main108 .resume-download-section{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:375px){
+    .main108{
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        margin: 0px;
+        padding: 2px;
+    }
+    .main108 h4{
+        font-size: medium;
+    }
+    .Alisha{
+        width: 100%;
+        padding: 2px;
+    }
+    .Alisha p{
+        font-size: xx-small;
+    }
+    .Alisha h4{
+        font-size: x-small;
+        font-weight: 900;
+    }
+    .main108 .resume-download-section{
+        width: 100%;
+    }
+}
+
+
+@media (max-width:320px){
+    .main108{
+        display: flex;
+        /* justify-content: space-between; */
+        flex-direction: column;
+        margin: 0px;
+        padding: 2px;
+    }
+    .main108 h4{
+        font-size: medium;
+    }
+    .Alisha{
+        width: 100%;
+        padding: 2px;
+        
+    }
+    .Alisha p{
+        font-size: xx-small;
+    }
+    .Alisha h4{
+        font-size: x-small;
+        font-weight: 900;
+    }
+    
+    .main108 .resume-download-section{
+        width: 100%;
+    }
+}

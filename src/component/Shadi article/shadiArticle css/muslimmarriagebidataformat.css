@@ -1,0 +1,210 @@
+.muslim-marriage-biodata {
+  /* background-color: green;
+    color: white; */
+}
+
+.muslim-marriage-biodata-img-div {
+ 
+  border-radius: 12px; /* Rounded corners for the container */
+  height: 500px;
+  width: 100%;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.muslim-marriage-biodata-img-div img {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  transition: transform 01.0s ease, box-shadow 0.3s ease;
+  object-fit:cover;  
+
+}
+.introduction p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: #222;
+  font-weight: 400;
+  max-width: 800px;
+  margin: auto;
+}
+
+.muslim-marriage-biodata-img-div img:hover {
+  transform: scale(2.05); /* Slight zoom effect on hover */
+}
+
+
+.muslim-marriage-biodata-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /* background-color: green; */
+  background: url('https://resumeera.xyz/Image/muslim-marriage-biodata-img.webp');
+  
+  color: white;
+  width: 100%;
+  margin: 0px;
+  padding: 15px;
+  border-radius: 15px;
+}
+.maintitleportion{
+    width: 100%;
+    padding: 15px;
+    
+}
+.maintitleportion p{
+  
+}
+.muslim-marriage-biodata-inner h2,
+.muslim-marriage-biodata-inner h3,
+.muslim-marriage-biodata-inner p,
+.muslim-marriage-biodata-inner ul,
+.muslim-marriage-biodata-inner li {
+  color: white;
+}
+.muslim-marriage-biodata-inner h1{
+   
+}
+.muslim-marriage-biodata-inner strong {
+  color: rgb(250, 209, 209);
+}
+.biodata-template {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  color: #333;
+}
+
+.template-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.profile-photo {
+  /* display: block; */
+  margin: 0 auto 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+}
+
+.template-section {
+  margin-bottom: 20px;
+}
+
+.template-section h4 {
+  font-size: 20px;
+  color: #2980b9;
+  border-bottom: 2px solid #2980b9;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.template-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.template-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.template-section li strong {
+  color: #2c3e50;
+}
+.biodata-container {
+    max-width: 100%;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: linear-gradient(135deg, #f3d476, #abb2f5,rgb(222, 150, 224));
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4b3b2b;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .biodata-container::before {
+    content: "♥";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 60px;
+    color: #d98c8c;
+    opacity: 0.15;
+    font-family: 'Segoe UI Symbol', 'Arial Unicode MS', sans-serif;
+    pointer-events: none;
+  }
+  
+  .biodata-container h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #7a4a4a;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 1px 3px #c9b1b1;
+  }
+  
+  .biodata-container p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-style: italic;
+    background: linear-gradient(135deg,rgb(247, 0, 255), #001aff ,#f8bb02);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+  }
+  
+  @media (max-width: 768px) {
+    .biodata-container {
+      padding: 20px 25px;
+      max-width: 90%;
+    }
+  
+    .biodata-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .biodata-container p {
+      font-size: 1rem;
+    }
+  }
+  
+@media (max-width: 600px) {
+    .muslim-marriage-biodata-inner{
+        display: flex;
+        flex-direction: column;
+
+    }
+  .biodata-template {
+    padding: 15px;
+  }
+
+  .template-title {
+    font-size: 20px;
+  }
+
+  .template-section h4 {
+    font-size: 18px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}

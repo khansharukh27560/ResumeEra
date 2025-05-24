@@ -1,0 +1,337 @@
+.mainn101{
+   width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.preview101{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-left: 25px;
+    box-shadow: 0px 0px 20px 10px rgb(207, 204, 204);
+    padding-right: 10px;
+}
+.preview101-1{
+    width:100%;
+    background-color: rgb(61, 60, 60);
+    /* color: white; */
+}
+.preview101-2{
+    width: 100%;
+    margin-left: 5px;
+}
+.profile101{
+    text-align: center;
+    
+
+}
+.imagediv101{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    background-color: rgb(37, 48, 40);
+    /* margin-left: 0px; */
+    padding-top: 25px;
+}
+.imagediv101 h1{
+    font-size: large;
+    font-weight: 900;
+}
+.image101{
+    /* padding-top: px; */
+    width: 150px;
+    height:150px ;
+    margin-left: 55px;
+    margin-top: 0px;
+    border-radius: 50%;
+
+}
+
+
+.profile-summary-section101 {
+    margin-left: 35px;
+    width: 100%;
+}
+
+.profile-summary-title101 {
+    /* Styles for the profile summary title */
+    margin-left: -25px;
+}
+
+.profile-summary-content101 {
+    /* Styles for the profile summary content */
+    text-align: justify;
+    margin-right: 10px;
+}
+
+.contact101 {
+    /* Styles for the contact section */
+    margin-left: 35px;
+
+}
+.contact101 h5{
+    margin-left: -25px;
+}
+.reference101{
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+.reference101 h5{
+    margin-left: -25px;
+}
+.reference101 p{
+    margin-bottom: -5px;
+}
+
+.experience-section101 {
+    /* Styles for the experience section */
+}
+
+.details-title101 {
+    /* Styles for the section titles (experience, education, etc.) */
+}
+
+.experience-hr101 {
+    /* Styles for the horizontal line under experience section */
+}
+
+.employment-history101 {
+    /* Styles for each employment history item */
+}
+
+.exp-inner101 {
+    /* Styles for the inner experience details */
+}
+
+.employment-detail101 {
+    /* Styles for the employment detail (organization and job title) */
+    margin-right: 50%;
+}
+
+.employment-duration101 {
+    /* Styles for the employment duration */
+}
+
+.aboutexperience101 {
+    /* Styles for the description of work experience */
+}
+
+.education-section101 {
+    /* Styles for the education section */
+}
+
+.education-hr101 {
+    /* Styles for the horizontal line under education section */
+}
+
+.education-item101 {
+    /* Styles for each education item */
+}
+
+.education-degree101 {
+    /* Styles for the education degree and duration */
+}
+
+.education-duration101 {
+    /* Styles for the duration of education */
+}
+
+.education-details101 {
+    /* Styles for additional education details (university name) */
+}
+
+.skill-section101 {
+    /* Styles for the skill section */
+}
+
+.technical-skills-title101 {
+    /* Styles for the technical skills title */
+}
+
+.technical-skills-hr101 {
+    /* Styles for the horizontal line under technical skills section */
+}
+
+.technical-skill-item101 {
+    /* Styles for each technical skill item */
+}
+.skill-section101 .inner-101-1{
+margin-left: 15px;
+}
+.preview101-2{
+
+}
+
+
+@media (max-width: 1024px) {
+    .main101 {
+        display: flex;
+        /* font-size: 0.75rem; Slightly more universal sizing */
+    }
+    .main101 h5, .main101 h6 {
+        
+        font-weight: 900;
+    }
+    .image101 {
+        width: 120px;
+        height: 120px;
+    }
+    .preview101-1 {
+        width: 35%;
+        background-color: rgb(61, 60, 60);
+        color: white;
+        margin-left: -5px;
+    }
+    .preview101-2 {
+        width: 35%;
+        margin-left: 5px;
+    }
+    #preview101{
+       width: 70%;
+    }
+}
+
+/* Styles for tablets and smaller desktops */
+
+/* General styles for larger screens */
+@media (max-width: 768px) {
+    .main101 {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.75rem; /* Slightly more universal sizing */
+    }
+    .main101 h5, .main101 h6 {
+        font-size: 0.875rem; /* Small font size */
+        font-weight: 900;
+    }
+    .image101 {
+        width: 120px;
+        height: 120px;
+    }
+    .preview101-1 {
+        width: 35%;
+        background-color: rgb(61, 60, 60);
+        color: white;
+        margin-left: -5px;
+    }
+    .preview101-2 {
+        width: 35%;
+        margin-left: 5px;
+    }
+    #preview101{
+       width: 70%;
+    }
+}
+
+/* Styles for tablets and smaller desktops */
+
+
+/* Styles for smartphones (width up to 425px) */
+@media (max-width: 425px) {
+    .mainn101 {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.625rem;
+    }
+    .main101 h5, .main101 h6 {
+        font-size: 0.75rem;
+        font-weight: 900;
+    }
+    .preview101{
+        margin-right: 0px;
+        margin-left: 0px;
+        box-shadow: none;
+    }
+    .image101 {
+        width: 50px;
+        height: 50px;
+    }
+    .preview101-1, .preview101-2 {
+        width: 100%; /* Full width for better stacking */
+        margin: 0;
+    }
+}
+
+/* Styles for very small mobile devices (width up to 375px) */
+@media (max-width: 375px) {
+    .mainn101 {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.5625rem;
+        width: 100%;
+    }
+    .main101 h5, .main101 h6 {
+        font-size: 0.6875rem;
+        font-weight: 900;
+    }
+    .preview101{
+        margin-right: 0px;
+        margin-left: 0px;
+        box-shadow: none;
+    }
+    .image101 {
+        width: 40px;
+        height: 40px;
+    }
+    .preview101-1, .preview101-2 {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* Styles for ultra-small mobile devices (width up to 320px) */
+@media (max-width: 320px) {
+    .mainn101 {
+        display: flex;
+        flex-direction: column;
+        /* font-size: 0.2rem; */
+        width: 100%;
+    }
+    .mainn101 h5, .mainn101 h6 {
+        font-size: small;
+        font-weight: 900;
+    }
+    .mainn101 p{
+        font-size: xx-small;
+    }
+    .mainn101 span{
+        font-size: xx-small;
+    }
+    .preview101{
+        margin-right: 0px;
+        margin-left: 0px;
+        box-shadow: none;
+    }
+    .image101 {
+        width: 30px;
+        height: 30px;
+    }
+    .preview101-1, .preview101-2 {
+        width: 160px;
+        margin: 0;
+    }
+    .resume-download-section{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .bg-color-picker{
+        width: 100%;
+    }
+    .star101{
+        font-size: .4rem;
+        margin-bottom: 5px;
+        
+    }
+    .star-rating{
+        margin-bottom: 5px;
+    }
+    .technical-skill-item101{
+        margin-bottom: -10px;
+    }
+}

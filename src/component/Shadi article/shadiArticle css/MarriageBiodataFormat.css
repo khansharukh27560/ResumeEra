@@ -1,0 +1,175 @@
+/* Basic Reset */
+
+  .marriageBiodataformat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:'20px';
+    background: linear-gradient(135deg,lightsalmon,lightpink);
+    border-radius: 25px;
+  }
+  .marriageBiodataformat h1 {
+    background: linear-gradient(to right, #fc3200, #cc5d08, #86a8e7, #7f7fd5); /* Example gradient colors */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* For non-WebKit browsers */
+    text-fill-color: transparent; /* For non-WebKit browsers */
+}
+  .marriageBiodataformat img{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+    padding: 15px;
+  }
+  /* Section Styling */
+  .mbf-essential {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+  }
+  
+  .mbf-essential h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .mbf-essential-item {
+    display: flex;
+    margin-bottom: 30px;
+    /* border-bottom: 2px solid #ddd; */
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    border-left: 5px solid blueviolet;
+    border-radius: 25px;
+    border-right: 5px solid blueviolet;
+    border-top: 5px dashed rgb(211, 172, 248);
+    border-bottom: 5px dashed rgb(211, 172, 248);
+    background: linear-gradient(135deg,rgb(226, 131, 43),rgb(247, 159, 153),rgb(226,131,43));
+
+  }
+  
+  .mbf-essential-item .item {
+    /* flex: 1; */
+    padding-right: 20px;
+    width: 100%;
+  }
+  
+  .mbf-essential-item h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  
+  .mbf-essential-item ul {
+    list-style-type: none;
+  }
+  
+  .mbf-essential-item ul li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #7f8c8d;
+  }
+  
+  .mbf-essential-item ul li:hover {
+    color: #2980b9;
+    cursor: pointer;
+  }
+  
+  .mbf-essential-item .image {
+    /* flex: 0.4; */
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mbf-essential-item .image img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 8px;
+   
+  }
+  
+  .mbf-essential-item .image img:hover {
+    
+    background-color: #2980b9;
+  }
+  
+  /* Section for 'Expectations from Partner' */
+  .mbf-essential-item ul li {
+    color: #34495e;
+  }
+  
+  .mbf-essential-item .item ul li {
+    font-size: 1.2em;
+    color: #34495e;
+  }
+
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .mbf-essential-item {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .mbf-essential-item .item,
+    .mbf-essential-item .image {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .mbf-essential-item .image img {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+  
+    .mbf-essential h2 {
+      font-size: 2em;
+    }
+  
+    .mbf-essential-item h3 {
+      font-size: 1.5em;
+    }
+  }
+  
+  /* General Text Styling */
+  h2, h3 {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #2c3e50;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  /* Styling for the list items with hover */
+  ul li {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #7f8c8d;
+  }
+  
+  ul li:hover {
+    color: #2980b9;
+    cursor: pointer;
+  }
+  
+  /* Optional - Style for the 'Photographs' section */
+  .mbf-essential-item .image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .mbf-essential-item .image img:hover {
+    /* transform: scale(1.1); */
+  }
+  
+  /* Footer or any extra sections */
+  .mbf-essential-item .item {
+    padding: 10px 20px;
+  }
+  
+  

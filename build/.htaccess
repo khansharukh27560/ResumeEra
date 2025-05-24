@@ -1,0 +1,84 @@
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+gzip on;
+gzip_types text/plain application/javascript text/css;
+
+# Redirect non-existing files & directories to index.html (for SPA support)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L]
+
+# Ensure sitemap.xml serves correctly
+RewriteRule ^sitemap\.xml$ sitemap.xml [L,T=application/xml]
+
+# Ensure robots.txt serves correctly as text/plain
+<FilesMatch "^robots\.txt$">
+    ForceType text/plain
+</FilesMatch>
+
+# Enable caching for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType text/javascript "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType application/json "access plus 1 year"
+    ExpiresByType application/xml "access plus 1 year"
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>
+# Enable Gzip & Brotli compression for better performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css text/javascript application/javascript application/json application/xml+rss
+</IfModule>
+Header always set Link "</main.css>; rel=preload; as=style"
+Header always set Link "</main.js>; rel=preload; as=script"
+
+<IfModule mod_headers.c>
+    Header append Vary Accept-Encoding
+</IfModule>
+
+# Brotli Compression (if supported)
+<IfModule mod_brotli.c>
+    AddOutputFilterByType BROTLI_COMPRESS text/plain text/html text/xml text/css text/javascript application/javascript application/json application/xml+rss
+</IfModule>
+
+# Lazy load images (adds "loading=lazy" attribute)
+<IfModule mod_headers.c>
+    Header set X-Lazy-Load "on"
+</IfModule>
+
+# Preload critical assets for faster rendering
+<IfModule mod_headers.c>
+    Header always set Link "</your_important_css_file.css>; rel=preload; as=style, </your_important_js_file.js>; rel=preload; as=script"
+</IfModule>
+
+# Security Headers
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(self), microphone=()"
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    Header always set Content-Security-Policy "default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self';"
+</IfModule>
+
+# Fix Cross-Origin Issues for Fonts
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>

@@ -1,0 +1,251 @@
+/* General Reset and Base Styles */
+.marriageBiodataArticle {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans Devanagari', 'Arial', sans-serif; /* Added Hindi-compatible font */
+    line-height: 1.6;
+    color: #333;
+}
+
+/* CTA Container */
+.biodataCtaWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.biodataCtaText {
+    flex: 1;
+}
+
+.biodataCtaText h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.biodataCtaText p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.biodataCtaBtn {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.biodataCtaBtn:hover {
+    background-color: #2980b9;
+}
+
+.biodataCtaImages {
+    display: flex;
+    gap: 10px;
+}
+
+.biodataCtaImages img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Text */
+.biodataIntro {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Shadi Card Container with Checkered Border */
+.biodataCardSection {
+    position: relative;
+    background-color: lightgreen;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px; /* Space for the border */
+}
+
+.biodataCardSection::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: repeating-conic-gradient(
+        cyan 0deg 90deg,
+        yellow 90deg 180deg,
+        orange 180deg 270deg,
+        green 270deg 360deg
+    );
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.biodataCardSection h3 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.biodataCardSection p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.biodataCardSection .biodataBtnPrimary {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.biodataCardSection .biodataBtnPrimary:hover {
+    background-color: #2980b9;
+}
+
+/* Section Styles */
+.biodataSection {
+    margin: 30px 0;
+}
+
+.biodataSection h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.biodataSection p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* List Styles */
+.biodataList {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.biodataList li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #444;
+}
+
+.biodataList ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.biodataList ul li {
+    font-size: 15px;
+    color: #555;
+    list-style-type: disc;
+}
+
+/* Images */
+.biodataSection img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ Section */
+.biodataFaqs {
+    margin: 30px 0;
+}
+
+.biodataFaqEntry {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.biodataFaqEntry h3 {
+    font-size: 18px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.biodataFaqEntry p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .biodataCtaWrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .biodataCtaImages {
+        margin-top: 20px;
+    }
+
+    .biodataCtaImages img {
+        width: 80px;
+    }
+
+    .biodataSection h2 {
+        font-size: 22px;
+    }
+
+    .biodataIntro,
+    .biodataSection p,
+    .biodataFaqEntry p {
+        font-size: 14px;
+    }
+
+    .biodataCardSection {
+        padding: 15px;
+    }
+
+    .biodataCardSection::before {
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+    }
+}

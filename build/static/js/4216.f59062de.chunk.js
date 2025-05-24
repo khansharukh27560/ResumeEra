@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkResumeEra=self.webpackChunkResumeEra||[]).push([[4216],{94216:(e,s,r)=>{r.r(s),r.d(s,{default:()=>a});r(65043);var u=r(70579);const a=()=>(0,u.jsxs)("div",{children:[(0,u.jsx)("h1",{children:"Modern ATS Resume Template"}),(0,u.jsx)("p",{children:"COMING SOON"})]})}}]);
+//# sourceMappingURL=4216.f59062de.chunk.js.map

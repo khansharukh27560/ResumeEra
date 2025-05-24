@@ -1,0 +1,297 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box
+}
+/* General Styles */
+/* input ke becch lebel dikhega */
+.input-container {
+  position: relative; /* Make the container position relative */
+  width: fit-content; /* Ensure input container takes full width */
+  margin-bottom: 20px; /* Optional: for spacing */
+  background: #f9f9f9;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.input-container label {
+  position: absolute; /* Label is positioned absolutely within the container */
+  top: 8%; /* Vertically center the label */
+  left: 10px; /* Horizontal offset (adjust as needed) */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  pointer-events: none; /* Prevent the label from blocking input interactions */
+  font-size: 14px; /* Font size of the label */
+  transition: 0.3s ease; /* Smooth transition for focus state */
+  z-index: 1; /* Make sure label stays above input */
+  background-color:inherit; /* Optional: background color for label */
+  padding: 3px;
+  color: rgb(218, 217, 217);
+}
+.input-container:hover label{
+  color: black;
+  display: none;
+}
+ 
+.input-container input {
+  width: 100%; /* Make input take full width of container */
+  padding: 10px; /* Padding inside the input */
+  /* border: 1px solid transparent; Border styling for input */
+  border-radius: 5px; /* Border radius for rounded edges */
+  padding-left: 40px; /* Give space for label on the left */
+  border: 2px solid transparent;
+  border-color: #00dbde;
+}
+
+.input-container input:focus + label {
+  top: -10px; /* Move label above the input when focused */
+  font-size: 12px; /* Make font size smaller on focus */
+  color: #4a90e2; /* Optional: Change color on focus */
+}
+
+input::placeholder{
+  color:black
+}
+.input-container:hover {
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #42e695, #88f7ce);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  /* color: black; */
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.input {
+  max-width: 190px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(143, 243, 226), rgb(104, 243, 151), violet) 1;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: black;
+  padding: 15px 5px 10px 20px;
+  border-radius: 10px;
+  width: 100%; /* Ensures the input field adapts to the screen size */
+}
+
+.input::before {
+  background-position: bottom right, bottom right;
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  z-index: -1;
+  border-radius: 15px;
+  transition: all .1s ease-in-out 0s;
+}
+
+.input::placeholder {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.one {
+  margin: 5px;
+}
+
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textarea1 {
+  margin-left: 5px;
+  background: none;
+  font-size: 18px;
+  color: black;
+  padding: 15px 5px 10px 20px;
+  background-position: bottom right, bottom right;
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input1 {
+  max-width: 620px;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, rgb(143, 243, 226), rgb(104, 243, 151), violet) 1;
+  /* outline: none; */
+  /* background: none; */
+  font-size: 18px;
+  color: black;
+  padding: 15px 5px 10px 20px;
+  background-position: bottom right, bottom right;
+  background-size: 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.firstDiv, .secondDiv {
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 20px 20px 60px rgb(63, 56, 56), inset -20px 60px white;
+}
+
+.resume {
+  font-size: 50px;
+  font-weight: 800;
+  background-image: url('https://buffer.com/library/content/images/2023/10/free-images.jpg');
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-shadow: (10px,10px,20px,#100129);
+}
+
+.boximage {
+  height: 150px;
+  width: 150px;
+}
+
+.image {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  transition: all ease 1s;
+}
+
+@media only screen and (max-width: 650px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar {
+    width: 100%; /* Full width on mobile screens */
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .input {
+    max-width: 100%; /* Full width input on mobile */
+    padding: 15px 5px; /* Adjust padding for smaller screens */
+  }
+
+  .resume {
+    font-size: 30px; /* Smaller font size on mobile */
+  }
+
+  .button {
+    font-size: 16px; /* Adjust button font size */
+    padding: 10px 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .socials-container {
+    gap: 15px; /* Adjust space between icons */
+  }
+}
+
+/* Media query for tablets */
+@media only screen and (max-width: 1024px) {
+  .resume {
+    font-size: 40px; /* Adjust font size for tablet screens */
+  }
+
+  .button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+
+  .socials-container {
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 250px; /* Set width for large screens */
+    height: auto;
+  }
+}
+
+/* Responsive Card */
+.card {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 150px;
+  box-sizing: border-box;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+/* Social Icons */
+.socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 40px;
+  background-color: #333333;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+}
+
+.social svg {
+  fill: white;
+  height: 20px;
+}

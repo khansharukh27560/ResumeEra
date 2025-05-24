@@ -1,0 +1,269 @@
+.personal-info-section103 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.personal-info-section103 h5{
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+.main103{
+    width: 100%;
+    border: 2px solid grey;
+    margin: 20px;
+    padding-left: 5px;
+    /* filter: drop-shadow(10px 0px 10px  rgb(192, 142, 68)); */
+    font-weight: 10;
+    font-size: small;
+    color: grey;
+    /* margin-right: 500px; */
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-top: 25px;
+}
+.personal-header {
+    text-align: center;
+    /* padding-right: 5px; */
+}
+.main103 h5{
+    font-weight: 900;
+}
+.personal-name {
+    font-weight: 900;
+    font-size: large;
+}
+.personal-details {}
+
+.profile-summary-section {}
+.profile-summary-title {}
+.profile-summary-hr {}
+.profile-summary-content {
+    padding-right:75px;
+    text-align: justify;
+}
+
+.education-section {}
+.details-title103 {}
+.education-hr {}
+.education-item103 {}
+.education-degree103 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 95px;
+}
+.education-duration103 {}
+.education-details {}
+.education-detail103 {}
+
+.experience-section {}
+.experience-hr {}
+.employment-history103 {}
+.exp-inner103{
+display: flex;
+justify-content: space-between;
+margin-right: 95px;
+}
+.employment-detail103 {}
+.employment-duration103 {}
+.aboutexperience103 {}
+
+.skill-section103 {}
+.technical-skills-title {}
+.technical-skills-hr {}
+.technical-skill-item {
+    display: flex;
+}
+
+.honor-award-section {}
+.honor-title {}
+.honor-hr {}
+.honor-item {}
+.honor-info {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 95px;
+}
+.honor-organization {
+
+}
+.honor-organization p{
+    margin-bottom: 0px;
+}
+
+@media (min-width:768px){
+    .personal-info-section103 {
+        display: flex;
+        /* justify-content: ; */
+        flex-direction: row;
+        width: 100%;
+    }  
+    .main103{
+        width: 100%;
+        border: 2px solid grey;
+        /* margin-right: 50px; */
+        padding-left: 5px;
+        margin: 0px;
+        font-size: xx-small;
+    } 
+    .main103 h3,h5{
+        font-size: small;
+    }
+    .main103 p{
+        font-size: xx-small;
+    }
+    .personal-info-section103 hr{
+        width:100%;
+    }
+    .profile-summary-content {
+        padding-right:5px;
+        text-align: justify;
+    }
+    .education-degree103 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .exp-inner103{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+        }
+        .honor-info {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5px;
+        }
+    
+}
+@media (max-width:425px){
+    .personal-info-section103 {
+        display: flex;
+        /* justify-content: ; */
+        flex-direction: column;
+        width: 100%;
+    }  
+    .main103{
+        width: 100%;
+        border: 2px solid grey;
+        /* margin-right: 50px; */
+        padding-left: 5px;
+        margin: 0px;
+        font-size: xx-small;
+    } 
+    .main103 h1,h5{
+        font-size: small;
+    }
+    .personal-info-section103 hr{
+        width:415px;
+    }
+    .profile-summary-content {
+        padding-right:5px;
+        text-align: justify;
+    }
+    .education-degree103 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .exp-inner103{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+        }
+        .honor-info {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5px;
+        }   
+}
+@media (max-width:375px){
+    .personal-info-section103 {
+        display: flex;
+        /* justify-content: ; */
+        flex-direction: column;
+        width: 100%;
+    }  
+    .main103{
+        width: 100%;
+        border: 2px solid grey;
+        /* margin-right: 50px; */
+        padding-left: 5px;
+        margin: 0px;
+        font-size: xx-small;
+    } 
+    .main103 p{
+        font-size: xx-small;
+    }
+    .main103 h1,h5{
+        font-size: small;
+    }
+    .personal-info-section103 hr{
+        width:365px;
+    }
+    .profile-summary-content {
+        padding-right:5px;
+        text-align: justify;
+    }
+    .education-degree103 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .exp-inner103{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+        }
+        .honor-info {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5px;
+        }
+    
+}
+@media (max-width:320px){
+    .personal-info-section103 {
+        display: flex;
+        /* justify-content: ; */
+        flex-direction: column;
+        width: 100%;
+    }  
+    .main103{
+        width: 100%;
+        border: 2px solid grey;
+        /* margin-right: 50px; */
+        padding-left: 5px;
+        margin: 0px;
+        font-size: xx-small;
+    } 
+    .main103 h3,h5{
+        font-size: small;
+    }
+    .main103 p{
+        font-size: xx-small;
+    }
+    .personal-info-section103 hr{
+        width:inherit;
+    }
+    .profile-summary-content {
+        padding-right:5px;
+        text-align: justify;
+    }
+    .education-degree103 {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+    }
+    .exp-inner103{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 5px;
+        }
+        .honor-info {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 5px;
+        }
+    
+}

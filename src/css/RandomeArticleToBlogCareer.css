@@ -1,0 +1,30 @@
+.article{
+    display: flex;
+}
+.article ul{
+    display: flex;
+    justify-content: space-between;
+    /* height: 200px; */
+}
+.ul li{
+    width: 30%;
+    /* display: flex; */
+}
+.article h1{
+    
+}
+@media (max-width: 767px) {
+    .article{
+        flex-direction: column;
+        width: 100%;
+    }
+    .article ul{
+        flex-direction: column;
+    }
+    .ul li{
+        width: 100%;
+    }
+    .article figure{
+        width: 100%;
+    }
+}

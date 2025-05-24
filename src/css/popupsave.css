@@ -1,0 +1,54 @@
+/* Unique popup-save CSS */
+.popup-save-container {
+    background:transparent;
+    padding: 30px 25px;
+    border-radius: 12px;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
+    max-width: fit-content;
+    border-radius: 15px;
+    text-align: center;
+  }
+  
+  .popup-save-message {
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .popup-save-done-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-save-done-button:hover {
+    background-color: #45a049;
+  }
+  
+  .button1 {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button1:hover {
+    background-color: #0056b3;
+  }
+  
+  .text {
+    margin-left: 5px;
+  }
+  

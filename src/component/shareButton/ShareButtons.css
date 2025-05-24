@@ -1,0 +1,124 @@
+/* Sticky Share Style for Share Buttons */
+.stickyShare {
+  position: fixed;
+  top: 160px;
+  right: -55px;
+  /* background-color: transparent; */
+  padding: 10px;
+  padding-left: 40px;
+  padding-right: 150px;
+  border-radius: 10px;
+  
+  z-index: 100;
+  width: 60px;  /* Adjust width as needed */
+  text-align: center;
+  /* height: 24rem; */
+}
+
+/* Share Content */
+.stickyShare .share-content {
+  display: block;
+  opacity: 0;
+  transform: translateY(-20px); /* Start position off-screen */
+  transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+  margin-top: 5px;
+  margin-left: 20px;
+  /* You can adjust the transition duration and easing for different effects */
+}
+
+/* Expanded State (on click/toggle) */
+.stickyShare.expanded .share-content {
+  opacity: 1;
+  transform: translateY(0); /* Move content to its original position */
+}
+
+/* Toggle Button */
+.toggle-button {
+  width: 70px;
+  height: 70px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.6s ease-in-out;
+  margin-top:10px;
+}
+
+/* Toggle Rotation */
+.stickyShare.expanded .toggle-button {
+  transform: rotate(90deg); /* Rotate button when expanded */
+}
+
+/* Show Content on Hover (Optional for hover effect) */
+.stickyShare:hover .share-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0); /* Show content instantly on hover */
+}
+
+/* Adjust heading styles */
+.stickyShare h3 {
+  margin-top: -5px;
+}
+
+/* Optional Adjustments for Positioning */
+.stickyShare a {
+  margin-top: -50px;
+}
+
+  
+  /* Style for Share Buttons Inside Sticky */
+  @media (max-width:425px){
+    .stickyShare {
+      position: fixed; /* This makes the element stick to a certain position on the screen */
+      top: 160px;       /* Distance from the top of the viewport */
+      right: 0px;     /* Distance from the right of the viewport */
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+     height: 12rem;
+     /* box-shadow: 0 4px 8px white; */
+     /* background-color: whitesmoke; */
+
+    }
+    .stickyShare h3{
+      font-size: 1rem;
+    }
+  }
+
+
+
+
+  @media (max-width:375px){
+    .stickyShare {
+      position: fixed; /* This makes the element stick to a certain position on the screen */
+      top: 160px;       /* Distance from the top of the viewport */
+      right: 0px;     /* Distance from the right of the viewport */
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    }
+    .stickyShare h3{
+      font-size: small;
+    }
+  }
+
+
+  @media (max-width:320px){
+    .stickyShare {
+      position: fixed; /* This makes the element stick to a certain position on the screen */
+      top: 140px;       /* Distance from the top of the viewport */
+      right: 35px;     /* Distance from the right of the viewport */
+      padding: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+     
+    }
+    .stickyShare h3{
+      font-size: small;
+    }
+  }

@@ -1,0 +1,19 @@
+.HowToWriteAResumemain{
+    display: flex;
+    justify-content: space-around;
+}
+.HowToWriteAResumemain h1{
+    font-family: cursive;
+    font-weight: 900;
+}
+.content{
+    margin-top: 15px;
+    width: 50%;
+    box-shadow: 0px 5px 20px 5px rgb(184, 182, 166),
+    0px 5px 20px 10px rgb(204, 196, 139),
+    0px 5px 20px 10px rgb(168, 212, 7);
+    border-radius: 5px;
+
+
+}
+

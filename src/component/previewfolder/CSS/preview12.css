@@ -1,0 +1,427 @@
+.resume-12 h3{
+    font-weight: 900;
+}
+.resume-12 h5{
+    font-weight: 700;
+}
+.image-profile-div12{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+.image-profile12{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    
+}
+.workTitle-div12{
+    white-space: nowrap;
+    font-size: xx-large;
+}
+ h1{
+    font-size: xx-large;
+}
+.job-exe12{
+    margin-left: 8px;
+}
+.objective-div12{
+    font-size: small;
+}
+.objective-div12 p{
+    text-align: justify;
+}
+.contact-card12{
+    margin-left: 8px;
+    margin-right: 120px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 130px;
+    width: 250px;
+    margin-bottom: 50px;
+    /* position: relative; */
+}
+.skill12 .row .col-6{
+    display: flex;
+    justify-content: space-evenly;
+}
+.about1-inner12{
+    white-space: nowrap;
+}
+.main12-1{
+    height: fit-content;
+    background-color: lightslategray;
+    position: relative;
+}
+.blank12{
+    margin-top: 15px;
+}
+/* Styles for smaller screens */
+@media  (min-width: 1024px) {
+    .main12 {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .resume-12 {
+        width: 100%;
+    }
+
+    .main12-1 {
+        flex-direction: row;
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .objective-div12 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .workTitle-div12 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
+
+    .workTitle-div12 h1 {
+        font-size: 2rem;
+    }
+    .image-profile-div12{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        top: 380px;
+        left: 580px;
+    }
+    .image-profile12{
+        width: 230px;
+        height: 230px;
+        margin-top: 50px;
+        top: -50px;
+        left: -0px;
+    }
+
+    .main12 .resume-download-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .resume-download-section .resume-name-input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .resume-download-section .download-button {
+        width: 100%;
+    }
+
+    .bg-color-picker, .font-style-selector {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .about1-inner12 {
+        white-space: nowrap;
+    }
+}
+
+@media  (max-width: 1024px) {
+    .main12 {
+        flex-direction: row;
+        height: auto;
+    }
+
+    .resume-12 {
+        width: 100%;
+    }
+
+    .main12-1 {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+        height: 300px;
+    }
+
+    .objective-div12 {
+        width: 100%;
+        text-align: center;
+        height: fit-content;
+    }
+
+    .workTitle-div12 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
+
+    .workTitle-div12 h1 {
+        font-size: 2rem;
+    }
+    .image-profile-div12{
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+       
+    }
+    .image-profile12{
+        width: 230px;
+        height: 230px;
+        margin-top: 50px;
+       
+    }
+
+    .main12 .resume-download-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .contact-card12{
+        margin-right: 40px;
+    }
+}
+
+@media  (max-width: 768px) {
+    .main12 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .resume-12 {
+        width: 100%;
+    }
+
+    .main12-1 {
+        flex-direction: row;
+        height: auto;
+        padding: 1rem;
+        height: 300px;
+    }
+
+    .objective-div12 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .workTitle-div12 {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.2;
+        margin-top: 1rem;
+    }
+
+    .workTitle-div12 h1 {
+        font-size: 2rem;
+    }
+    .image-profile-div12{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    .contact-card12{
+        width: 300px;
+        margin-right: 50px;
+    }
+    .image-profile12{
+        width: 180px;
+        height: 180px;
+        margin-top: 50px;
+      
+    }
+
+    .main12 .resume-download-section {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+}
+
+/* Styles for very small screens (mobile devices) */
+@media (max-width: 425px) {
+    .resume-12{
+        width: 425px;
+        font-size: xx-small;
+        height: fit-content;
+    }
+    .resume-12 p{
+        font-size: xx-small;
+    }
+    .objective-div12{
+        height:50%;
+    }
+    .resume-12 h5{
+        font-size: small;
+    }
+    .resume-12 h1{
+        font-size: medium;
+    }
+    .workTitle-div12 h1{
+        font-size: x-small;
+    }
+    .main12-1 {
+        padding: 0.5rem;
+        font-size: small;
+        width: fit-content;
+        height: 300px;
+        /* margin-bottom: 40px; */
+    }
+    .image-profile-div12{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+       margin-top: 150px;
+       margin-right: 0px;
+    }
+    .image-profile12{
+        width: 140px;
+        height: 140px;
+        margin-top: 50px;
+        top: -50px;
+        left: -0px;
+    }
+
+    .workTitle-div12 h3 {
+        font-size: medium;
+        font-weight: 900;
+    }
+
+    .workTitle-div12 p {
+        font-size: x-small;
+    }
+    .contact-card12{
+        margin-top: 30px;
+        margin-left: 4px;
+        margin-right: 5px;
+        width: 180px;
+    }
+    .contact-card12 p{
+        margin-left: 0px;
+        text-align: left;
+        width: 130px;
+        padding-left: 0px;
+        /* word-break: ; */
+    }
+
+   
+    
+
+    
+}
+
+@media (max-width: 375px) {
+    .resume-12{
+        width: 320px;
+        font-size: xx-small;
+        height: fit-content;
+    }
+    .objective-div12{
+        height:50%;
+    }
+    .resume-12 h5,.resume-12 h3{
+        font-size: small;
+        font-weight: 700;
+    }
+    .resume-12 h1{
+        font-size: large;
+    }
+    
+    
+    .job-experience12 h5{
+font-size: x-small;
+    }
+    .job-experience12 p{
+        font-size: xx-small;
+        white-space: none;
+    }
+    .job-experience12{
+        width: 40%;
+    }
+    .main12-1 {
+        padding: 0.5rem;
+        font-size: small;
+        width: fit-content;
+        height: 300px;
+        /* margin-bottom: 40px; */
+    }
+    .blank12{
+        /* border: 1px solid red; */
+    }
+    .image-profile-div12{
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+       margin-top: 180px;
+       margin-right: 20px;
+    }
+    .image-profile12{
+        width: 100px;
+        height: 100px;
+        margin-top: 50px;
+        top: -50px;
+        left: -0px;
+    }
+
+    .workTitle-div12 h3 {
+        font-size: small;
+    }
+
+    .workTitle-div12 p {
+        font-size: x-small;
+        white-space: none;
+    }
+    .contact-card12{
+        margin-top: 30px;
+        /* margin-left: 0px; */
+    margin-right: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    /* margin-top: 130px; */
+    width: 170px;
+    }
+    .skill12 .row .col-6{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .job-exe12{
+        width: 120%;
+        margin-right: 10px;
+        padding-right: 15px;
+    }
+
+    .objective-div12 ,
+    .resume-download-section h5 {
+        font-size: xx-small;
+    }
+    .main12-1 p{
+        font-size: xx-small;
+    }
+
+   
+}
+@media (max-width: 320px),(min-widt:321px) {
+    .resume-12 {
+        display: none;
+        /* position: relati                 ve; */
+    }
+
+    .resume-12::before {
+        content: "This resume is not supported on this device.";
+        display: block;
+        font-size: medium;
+        text-align: center;
+        /* color: red; */
+        padding: 20px;
+    }
+}

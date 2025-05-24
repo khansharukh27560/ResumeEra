@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkResumeEra=self.webpackChunkResumeEra||[]).push([[8750],{38750:(e,s,n)=>{n.r(s),n.d(s,{default:()=>u});var r=n(70579);const u=()=>(0,r.jsx)("div",{children:(0,r.jsx)("h1",{children:"Comming Soon"})})}}]);
+//# sourceMappingURL=8750.ba0e1cbd.chunk.js.map

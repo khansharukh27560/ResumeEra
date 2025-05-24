@@ -1,0 +1,170 @@
+
+
+.big {
+    text-align: center;
+    background: linear-gradient(135deg, #cafaca, #91eb91,#34fc34);
+}
+
+.ResumeEraHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 25px;
+}
+.heading-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ResumeEraHeading h1{
+    font-size:medium;
+   
+   
+}
+
+.ResumeEraHeading Link {
+    border: 2px solid transparent;
+    border-image: linear-gradient(135deg, #ff7e5f, #feb47b);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+.dateAuthor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Better vertical alignment */
+}
+
+.dateAuthor img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.big .middle{
+    align-items: center;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.author-details {
+    color: black;
+    line-height: 1.4; /* Better readability */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background: linear-gradient(135deg, #f3cc92, #f1bb07);
+
+}
+.author-highlight{
+    white-space: nowrap;
+}
+.aboutresumeerateam span{
+    
+}
+
+@media (max-width: 768px) { /* Ek hi media query kafi hai */
+    .ResumeEraHeading {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .dateAuthor img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .dateAuthor span {
+        font-size: 0.8rem;
+    }
+
+    .author-highlight {
+        white-space: normal;
+    }
+}
+
+@media(max-width:320px){
+    .ResumeEraHeading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        background:linear-gradient(135deg,rgb(202, 250, 202),rgb(1, 48, 1));
+    }
+    .dateAuthor img{
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+        border: 5px solid white;
+        margin: 5px;
+    }
+    .dateAuthor span{
+        font-size: .8rem;
+        color: white;
+    }
+    .author-details {
+    flex-direction: column;
+    }
+       
+}
+
+@media(max-width:375px){
+    .ResumeEraHeading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+        background:linear-gradient(135deg,rgb(202, 250, 202),rgb(1, 48, 1));
+    }
+    .dateAuthor img{
+        width: 100px;
+        height: 50%;
+        border-radius: 15px;
+        border: 5px solid white;
+        margin: 5px;
+    }
+    .dateAuthor span{
+        font-size: .8rem;
+        color: white;
+    }
+    .author-details {
+        flex-direction: column;
+        }
+       
+}
+
+@media(max-width:425px){
+    .ResumeEraHeading{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5px;
+    }
+    .dateAuthor img{
+        width: 100px;
+        height: auto;
+        border-radius: 15px;
+        border: 5px solid white;
+        margin: 5px;
+    }
+    .dateAuthor span{
+        font-size: .8rem;
+        color: white;
+    }
+    .author-highlight {
+        white-space: normal; 
+        font-size: 0.7rem !important;
+        text-align: justify;
+        
+      }
+      .author-details {
+        flex-direction: column;
+        }
+}

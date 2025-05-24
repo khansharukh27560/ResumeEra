@@ -1,0 +1,32 @@
+.not-found-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .not-found-container h1 {
+    font-size: 100px;
+    color: #ff6347;
+  }
+  
+  p {
+    /* font-size: 50px; */
+    /* font-family: cursive; */
+    font-size: xx-large;
+
+  }
+  
+  .not-found-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: palegreen;
+    color: black;
+  }
+  

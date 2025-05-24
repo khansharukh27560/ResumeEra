@@ -1,0 +1,43 @@
+.cover-carousel-container {
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.cover-carousel-image-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+}
+
+.cover-carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.cover-carousel-image-container:hover .cover-carousel-image {
+  transform: scale(1.05);
+}
+
+.cover-carousel-button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  opacity: 0.9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cover-carousel-button:hover {
+  opacity: 1;
+  background-color: #0056b3;
+}
